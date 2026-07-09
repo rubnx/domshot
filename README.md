@@ -171,6 +171,10 @@ For privacy questions, contact `me@rubenruiz.dev`.
 
 This public repo exists so people and agents can understand DOMShot, find docs, inspect examples, and report issues. The private `rubnx/domshot-app` repo remains the source of truth for the Chrome extension, website, package source, and release operations.
 
+## Maintenance
+
+The examples and docs here are a curated public subset, not a copy of the private source tree. They should be refreshed when DOMShot's CLI, Node API, MCP tools, privacy notes, support process, or public website docs change.
+
 ## License And Reuse
 
 DOMShot is proprietary software. This repository is public for documentation, issue tracking, examples, and product information only.
