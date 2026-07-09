@@ -10,9 +10,9 @@ npm package: [`@usedomshot/cli`](https://www.npmjs.com/package/@usedomshot/cli)
 
 ## What This Repo Is
 
-This is the public technical home for DOMShot. It contains public docs, examples, support notes, privacy notes, and visual assets for understanding and using DOMShot.
+This is the public home for DOMShot. It contains product information, public docs, examples, support notes, privacy notes, and visual assets for understanding and using DOMShot.
 
-The main product source repository is private. This repo is not a mirror of the private app code.
+The app itself is not open source. The main product source repository is private, and this repo is not a mirror of the private app code.
 
 ## Product Surfaces
 
@@ -169,4 +169,10 @@ For privacy questions, contact `me@rubenruiz.dev`.
 
 ## Repository Relationship
 
-This public repo exists so people and agents can understand DOMShot, find docs, inspect examples, and report issues. The private product repo remains the source of truth for the Chrome extension, website, package source, and release operations.
+This public repo exists so people and agents can understand DOMShot, find docs, inspect examples, and report issues. The private `rubnx/domshot-app` repo remains the source of truth for the Chrome extension, website, package source, and release operations.
+
+## License And Reuse
+
+DOMShot is proprietary software. This repository is public for documentation, issue tracking, examples, and product information only.
+
+Unless explicitly stated otherwise, the contents of this repository do not grant permission to copy, modify, distribute, or reuse DOMShot's proprietary application code, branding, or assets.
