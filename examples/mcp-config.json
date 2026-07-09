@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "domshot": {
+      "command": "domshot",
+      "args": ["mcp"]
+    }
+  }
+}
+

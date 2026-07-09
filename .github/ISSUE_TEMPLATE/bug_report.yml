@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a reproducible DOMShot issue.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface
+      options:
+        - Chrome extension
+        - CLI
+        - Node API
+        - MCP
+        - Docs
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Package or extension version, if known.
+      placeholder: "@usedomshot/cli 0.1.x"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use public pages and sanitized examples only.
+      placeholder: |
+        1. Run ...
+        2. Open ...
+        3. Capture ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Public issue safety
+      description: Do not include private URLs, tokens, cookies, browser profiles, or private screenshots.
+      placeholder: Confirm the report uses public or sanitized reproduction details.
+
