@@ -23,6 +23,10 @@ DOMShot currently has two public surfaces:
 
 The agent package is useful for Codex, Claude Code, and other automation or MCP-compatible hosts that need webpage visuals as files.
 
+## Capture Reliability
+
+DOMShot normally renders the selected DOM element directly. When a site blocks that route, the Chrome extension and agent package capture the isolated element over black and white browser backdrops and reconstruct its transparent pixels. If that reconstruction is also unavailable, DOMShot uses a visible screenshot fallback and labels it clearly in the result.
+
 ## Install
 
 For browser use, install the Chrome extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/domshot/ajadoncbfggemebnplpjfejcleccaaib).
