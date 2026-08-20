@@ -1,5 +1,17 @@
 # MCP
 
+## Hosted MCP For Public Pages
+
+Connect an MCP-compatible host to:
+
+```text
+https://mcp.domshot.app/mcp
+```
+
+The hosted service accepts public HTTPS pages only, returns image content inline, and cannot access local Chrome tabs, cookies, browser profiles, private networks, or signed-in pages.
+
+## Local MCP
+
 DOMShot can run as a local stdio MCP server:
 
 ```bash
@@ -39,4 +51,3 @@ Keep this config stable. To upgrade DOMShot, update the npm package rather than 
 - `create_domshot_shot_pack`: create a small final asset pack.
 
 DOMShot writes files locally. Your MCP host decides how to display, store, or reference those files.
-

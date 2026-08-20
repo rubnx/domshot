@@ -55,3 +55,19 @@ console.log(pack.contactSheet, pack.report);
 
 Use selector mode when exactness matters. Use target mode when the agent can describe the element in plain language.
 
+## Cancel Long-Running Work
+
+Pass an `AbortSignal` as the second argument to cancel a browser job or enforce a deadline:
+
+```js
+const controller = new AbortController();
+const timer = setTimeout(() => controller.abort(), 30_000);
+
+try {
+  await captureDomshot({ url: "https://example.com", selector: "h1" }, {
+    signal: controller.signal
+  });
+} finally {
+  clearTimeout(timer);
+}
+```

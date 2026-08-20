@@ -16,7 +16,11 @@ The agent package runs in the user or developer environment where it is installe
 
 Any page content, screenshots, paths, browser profiles, cookies, or login state involved in that workflow remain in the local automation environment unless the user, agent host, or surrounding application stores or shares them separately.
 
-DOMShot does not operate a hosted screenshot service for agent captures.
+## Hosted MCP
+
+The optional hosted MCP service accepts only public HTTPS URLs. It opens those pages in isolated browser sessions, captures the requested element, returns PNG image data and sanitized capture metadata, and deletes temporary working files after the response is assembled.
+
+The hosted service does not accept browser credentials and cannot access local tabs, cookies, browser profiles, local files, private networks, or pages behind login. Operational infrastructure logs are limited to network and service metadata; request bodies, page content, selectors, and image payloads are not intentionally logged.
 
 ## Data Sharing
 
@@ -31,4 +35,3 @@ The agent package depends on standard npm dependencies installed in the local pr
 ## Contact
 
 For privacy questions about DOMShot, contact `me@rubenruiz.dev`.
-

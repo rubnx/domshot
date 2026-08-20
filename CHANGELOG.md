@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-20
+
+- Prepared Chrome extension 1.0.2 with custom solid-color backgrounds and a more compact responsive preview sidebar.
+- Prepared `@usedomshot/cli` 0.1.6 with cancellable browser jobs through `AbortSignal`.
+- Documented the public hosted MCP endpoint and its public-page-only privacy boundary.
+
 ## 2026-08-11
 
 - Released `@usedomshot/cli` 0.1.5 with transparent screenshot reconstruction when DOM rendering is blocked.

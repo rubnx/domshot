@@ -16,10 +16,11 @@ The app itself is not open source. The main product source repository is private
 
 ## Product Surfaces
 
-DOMShot currently has two public surfaces:
+DOMShot currently has three public surfaces:
 
 - Chrome extension: select a visible element in the browser, preview it, style the output, and download a PNG.
 - Agent package: use the Node API, `domshot` CLI, or `domshot mcp` server to inspect pages and capture polished PNGs from local automation workflows.
+- Hosted MCP: capture elements from public HTTPS pages through `https://mcp.domshot.app/mcp` without giving the service browser credentials or private-session access.
 
 The agent package is useful for Codex, Claude Code, and other automation or MCP-compatible hosts that need webpage visuals as files.
 
@@ -107,7 +108,13 @@ DOMShot can export the same selected element in different presentation styles:
 
 ## MCP
 
-Run the local MCP server with:
+For public webpages, MCP-compatible hosts can connect to the universal hosted endpoint:
+
+```text
+https://mcp.domshot.app/mcp
+```
+
+For local, private, or signed-in workflows, run the local MCP server instead:
 
 ```bash
 domshot mcp
@@ -160,7 +167,7 @@ DOMShot is designed around local workflows:
 
 - The Chrome extension runs in your browser and captures the element you select.
 - The agent package runs in your local automation environment.
-- DOMShot does not operate a hosted screenshot service for agent captures.
+- The optional hosted MCP processes public HTTPS URLs in isolated browser sessions and returns images inline; it cannot access local tabs, cookies, profiles, private networks, or pages behind login.
 - Output files, browser profiles, cookies, login state, and private page content remain in the local environment unless your own tool or host stores or shares them separately.
 
 Read [`PRIVACY.md`](./PRIVACY.md) for the fuller public note.
